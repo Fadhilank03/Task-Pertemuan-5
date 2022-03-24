@@ -1,0 +1,81 @@
+/* Small Screen */
+.container {
+    margin: 1rem;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    text-align: center;
+  }
+  
+  .hero__left {
+    margin-bottom: -1rem;
+    flex-grow: 4;
+  }
+  .addmovie_left{
+      margin-bottom: 20px;
+  }
+  .addmovie__title {
+    color: #4361ee;
+    margin-bottom: 1rem;
+    font-size: 2.44rem;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 7px 0;
+    box-sizing: border-box;
+    border: 1px solid #4361ee;
+    border-radius: 6px;
+  }
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4361ee;
+    color: white;
+    padding: 8px 81px;
+    text-decoration: none;
+    margin: -10px -1px;
+    cursor: pointer;
+    border: 1px solid #4361ee;
+    border-radius: 6px;
+  }
+  .addmovie__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Medium Screen */
+  @media (min-width: 768px) {
+    /*
+     * Nothing TODO Here.
+     * We dont change style Hero. 
+     */
+  }
+  
+  /* Large Screen */
+  @media (min-width: 992px) {
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+    }
+  
+    .hero {
+      margin: 0 20rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .hero__left {
+      flex-basis: 60%;
+    }
+  
+    .hero__right {
+      flex-basis: 40%;
+    }
+  }
+  
